@@ -1,0 +1,42 @@
+// FONT WEIGHT VARIABLE
+$weight-400: 400;
+$weight-600: 600;
+$weight-700: 700;
+
+// FONT SIZE
+$font-12: 1.2rem;
+$font-16: 1.6rem;
+$font-18: 1.8rem;
+$font-20: 2rem;
+$font-24: 2.4rem;
+$font-30: 3rem;
+$font-40: 4rem;
+
+// COLOR
+$color-white: #fff;
+$color-f7: #f7f7f7;
+$color-777: #777;
+$color-555: #555;
+$color-aaa: #aaa;
+$color-eee: #eee;
+$color-blue-dark: rgba(7, 7, 161, 0.9);
+$color-blue-light: rgba(28, 28, 245, 0.9);
+
+// UTILITIES
+$mb-small: 1rem !important;
+$mt-small: 1rem !important;
+$mb-medium: 2rem !important;
+$mt-medium: 2rem !important;
+$mb-large: 4rem !important;
+$mt-large: 4rem !important;
+
+// BREAK POINT 
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-medium: 50em;
+$bp-small: 37.5em;
+
+// HEADING
+%heading{
+    font-weight: $weight-400;
+}
