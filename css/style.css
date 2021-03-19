@@ -1,3 +1,11 @@
+.heading-1 {
+  font-weight: 600;
+  color: #555;
+  text-transform: capitalize; }
+
+.heading-1 {
+  font-size: 3rem; }
+
 *,
 ::before,
 ::after {
@@ -15,14 +23,42 @@ body {
   box-sizing: border-box;
   font-weight: 400;
   line-height: 1.6;
-  background-color: #fff; }
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif; }
 
 .container {
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: [sidebar-start] 4rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-columns: minmax(1rem, 1fr) [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end] minmax(1rem, 1fr);
   grid-gap: 1rem; }
+
+.btn {
+  padding: 1rem 2.4rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  font-size: 1.6rem;
+  background-color: rgba(28, 28, 245, 0.9);
+  color: #fff;
+  outline: none;
+  border: none; }
+  .btn:hover {
+    background-color: rgba(7, 7, 161, 0.9);
+    cursor: pointer; }
+
+.navbar {
+  grid-column: sidebar-start / sidebar-end; }
 
 .profile {
   background-color: #f7f7f7;
-  grid-column: col-sta; }
+  grid-column: full-start/ col-end 2; }
+
+.home {
+  grid-column: col-start 3/ col-end 5; }
+
+.sidebar {
+  background-color: #f7f7f7;
+  grid-column: col-end 6/ full-end; }

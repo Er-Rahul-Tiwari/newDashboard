@@ -1,0 +1,25 @@
+-------------------- Auto-Git Log --------------------
+		Fri Mar 19 2021 23:29:50 GMT+0530 (India Standard Time)
+------------------------------------------------------
+
+Modified files:
+* css/style.css
+* index.html
+* readme.md
+* sass/_base.scss
+* sass/_home.scss
+* sass/_navbar.scss
+* sass/_profile.scss
+* sass/_sidebar.scss
+* sass/_typography.scss
+* sass/main.scss
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+
+
+Renamed files:

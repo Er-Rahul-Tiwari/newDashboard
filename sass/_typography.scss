@@ -30,6 +30,10 @@ $mt-medium: 2rem !important;
 $mb-large: 4rem !important;
 $mt-large: 4rem !important;
 
+// FONT FAMILY
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
 // BREAK POINT 
 $bp-largest: 75em;
 $bp-large: 62.5em;
@@ -38,5 +42,12 @@ $bp-small: 37.5em;
 
 // HEADING
 %heading{
-    font-weight: $weight-400;
+    font-weight: $weight-600;
+    color: $color-555;
+    text-transform: capitalize;
+}
+
+.heading-1{
+    @extend %heading;
+    font-size: $font-30;
 }
