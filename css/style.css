@@ -97,6 +97,55 @@ body {
 .hut {
   fill: #999; }
 
+.bar > span {
+  position: relative;
+  display: flex;
+  left: 0.1rem;
+  background-color: rgba(28, 28, 245, 0.6);
+  height: 0.4rem;
+  top: 0.5rem; }
+
+.bar {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 100%; }
+
+.bar-input {
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  top: -999.9rem;
+  left: -999.9rem; }
+
+.bar-view {
+  display: flex;
+  flex-grow: 1;
+  position: relative; }
+
+.bar-view:not(:last-child):before,
+.bar-view:not(:last-child):after {
+  content: "";
+  width: calc(100% - 2.4rem);
+  position: absolute;
+  right: calc(50% + 1.2rem); }
+
+.bar-view:not(:last-child):before {
+  height: 0.4rem;
+  top: calc(50% - 0.3rem);
+  background: #eee; }
+
+.bar-button {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1); }
+
 .navbar {
   grid-column: sidebar-start / sidebar-end;
   display: grid;
