@@ -1,14 +1,14 @@
 .profiles {
-    background-color: $color-f7;
+    background-color: $color-fa;
     grid-column: full-start/ col-end 2;
     
     display: grid;
-    justify-items: center;
     grid-row-gap: 2rem;
-    padding: 4rem 0;
+    padding: 4rem 2rem 4rem 3rem;
 
     @media only screen and (max-width: $bp-small){
         background-color: $color-white;
+        justify-items: center;
     }
 }
 
@@ -17,6 +17,7 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-gap: 2rem;
+        padding: 0 2rem;
 
         align-items: center;
         justify-items: start;
@@ -35,10 +36,11 @@
     &__name {}
     &__revenue{
         display: grid;
+        justify-content: start;
         justify-items: start;
         grid-row-gap: 2rem;
-        padding: 3rem -2rem;
-        background-color: $color-f7;
+        padding: 3rem 2rem;
+        background-color: $color-fa;
         @extend %border__radius-1;
 }
     &__today{
@@ -56,7 +58,7 @@
         }
     }
     &__transection{
-        background-color: $color-f7;
+        background-color: $color-fa;
         padding: 3rem 2rem;
         display: grid;
         grid-gap: 2rem;

@@ -27,7 +27,7 @@ $color-777: #777;
 $color-999: #999;
 $color-aaa: #aaa;
 $color-eee: #eee;
-$color-f7: #f7f7f7;
+$color-fa: #fafafa;
 
 // UTILITIES
 $mb-small: 1rem !important;
@@ -39,7 +39,7 @@ $mt-large: 4rem !important;
 
 // FONT FAMILY
 $font-primary: 'Nunito', sans-serif;
-$font-display: 'Josefin Sans', sans-serif;
+$font-secondary: 'Josefin Sans', sans-serif;
 
 // BREAK POINT 
 $bp-largest: 75em;
@@ -49,7 +49,7 @@ $bp-small: 37.5em;
 
 // HEADING
 %heading {
-    font-family: $font-display;
+    font-family: $font-secondary;
     font-weight: 400;
     line-height: 1
 }
