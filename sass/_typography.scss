@@ -21,12 +21,13 @@ $color-white: #fff;
 $color-black: #000;
 $color-blue-dark: rgba(7, 7, 161, 0.9);
 $color-blue-light: rgba(28, 28, 245, 0.9);
-$color-f7: #f7f7f7;
 $color-222: #222;
-$color-777: #777;
 $color-555: #555;
+$color-777: #777;
+$color-999: #999;
 $color-aaa: #aaa;
 $color-eee: #eee;
+$color-f7: #f7f7f7;
 
 // UTILITIES
 $mb-small: 1rem !important;
@@ -50,18 +51,32 @@ $bp-small: 37.5em;
 %heading {
     font-family: $font-display;
     font-weight: 400;
+    line-height: 1
 }
 
 .heading-1{
     @extend %heading;
+    font-size: $font-30;
+}
+.heading-2{
+    @extend %heading;
     font-size: $font-24;
 }
-
+.heading-3{
+    @extend %heading;
+    font-size: $font-18;
+}
+.heading-4{
+    @extend %heading;
+    font-size: $font-16;
+}
 
 %para{
-    // font-size: ;
+    font-size: $font-14;
+    color: $color-999;
+    text-transform: capitalize;
+    font-weight: $weight-400i;
 }
 .para{
-    font-size: $font-14;
-    color: $color-222;
+    @extend %para;
 }

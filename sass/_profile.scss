@@ -29,9 +29,17 @@
         box-shadow: 0 0 1rem rgba($color-black,.3);
     }
     &__name {}
+    &__revenue{
+        display: grid;
+        grid-row-gap: 2rem;
+        padding: 4rem 1rem;
+    }
     &__today{
         font-size: $font-16;
         font-weight: $weight-700;
-        color:
+        color: $color-777;
+    }
+    &__box{
+        
     }
 }
