@@ -1,4 +1,27 @@
-.profile{
+.profiles {
     background-color: $color-f7;
     grid-column: full-start/ col-end 2;
+}
+
+.profile {
+    &__story {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+    }
+    &__img {
+        height: 5rem;
+        width: 5rem;
+        object-fit: round($number: 50%);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    &__heading {
+        display: grid;
+        align-content: center;
+    }
 }
