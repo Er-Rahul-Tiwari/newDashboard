@@ -8,8 +8,9 @@
     position: sticky;
     top: 0;
     padding: 2rem 0;
+    z-index: 9999;
 
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-small) {
         grid-column: full-start / full-end;
         display: grid;
         grid-template-rows: 1fr;
@@ -17,15 +18,16 @@
         grid-auto-flow: column;
         overflow-x: scroll;
         overflow: hidden;
+        padding: 0;
     }
 
-    &__active{
+    &__active {
         background-color: $color-blue-light;
-        box-shadow: 0 0 1.5rem rgba($color-black,.3);
-        svg{
+        box-shadow: 0 0 1.5rem rgba($color-black, 0.3);
+        svg {
             fill: $color-white;
         }
-        &:hover{
+        &:hover {
             background-color: $color-blue-dark;
         }
     }
@@ -35,30 +37,29 @@
         display: grid;
         align-items: center;
         justify-items: center;
-        border-radius: .7rem;
-        -webkit-border-radius: .7rem;
-        -moz-border-radius: .7rem;
-        -ms-border-radius: .7rem;
-        -o-border-radius: .7rem;
+        border-radius: 0.7rem;
+        -webkit-border-radius: 0.7rem;
+        -moz-border-radius: 0.7rem;
+        -ms-border-radius: 0.7rem;
+        -o-border-radius: 0.7rem;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
-}
+    }
     &__top {
         display: grid;
         align-content: start;
         justify-items: center;
         grid-row-gap: 2rem;
 
-        @media only screen and (max-width: $bp-small){
+        @media only screen and (max-width: $bp-small) {
             position: fixed;
-            bottom: 1px;
+            bottom: 0px;
             grid-auto-flow: column;
             align-items: end;
             width: 100%;
-            padding: .5rem 0;
-            z-index: 9999;
+            padding: 0.5rem 0;
             background-color: $color-white;
         }
 
@@ -84,13 +85,17 @@
         align-content: end;
         grid-row-gap: 2rem;
 
-        @media only screen and (max-width: $bp-small){
-            grid-column: full-start / full-end;
+        @media only screen and (max-width: $bp-small) {
             grid-auto-flow: column;
             grid-gap: 0;
             background-color: $color-white;
-            padding: .4rem 0;
+            padding: 0.4rem 1.5rem;
             width: 100%;
+            justify-items: end;
         }
     }
+}
+
+.sm__none{
+    display: none;
 }

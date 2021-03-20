@@ -157,7 +157,8 @@ body {
   height: 100vh;
   position: sticky;
   top: 0;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  z-index: 9999; }
   @media only screen and (max-width: 37.5em) {
     .navbar {
       grid-column: full-start / full-end;
@@ -166,7 +167,8 @@ body {
       height: auto;
       grid-auto-flow: column;
       overflow-x: scroll;
-      overflow: hidden; } }
+      overflow: hidden;
+      padding: 0; } }
   .navbar__active {
     background-color: rgba(28, 28, 245, 0.9);
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3); }
@@ -180,11 +182,11 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-    border-radius: .7rem;
-    -webkit-border-radius: .7rem;
-    -moz-border-radius: .7rem;
-    -ms-border-radius: .7rem;
-    -o-border-radius: .7rem; }
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem; }
     .navbar__btn:hover {
       cursor: pointer; }
   .navbar__top {
@@ -195,12 +197,11 @@ body {
     @media only screen and (max-width: 37.5em) {
       .navbar__top {
         position: fixed;
-        bottom: 1px;
+        bottom: 0px;
         grid-auto-flow: column;
         align-items: end;
         width: 100%;
-        padding: .5rem 0;
-        z-index: 9999;
+        padding: 0.5rem 0;
         background-color: #fff; } }
     .navbar__top__itmes {
       display: grid;
@@ -222,12 +223,15 @@ body {
     grid-row-gap: 2rem; }
     @media only screen and (max-width: 37.5em) {
       .navbar__bottom {
-        grid-column: full-start / full-end;
         grid-auto-flow: column;
         grid-gap: 0;
         background-color: #fff;
-        padding: .4rem 0;
-        width: 100%; } }
+        padding: 0.4rem 1.5rem;
+        width: 100%;
+        justify-items: end; } }
+
+.sm__none {
+  display: none; }
 
 .profiles {
   background-color: #fafafa;
@@ -300,7 +304,7 @@ body {
       grid-column: full-start / full-end; } }
 
 .sidebars {
-  grid-column: col-end 6/ full-end; }
+  grid-column: col-end 6 / full-end; }
   @media only screen and (max-width: 37.5em) {
     .sidebars {
       grid-column: full-start / full-end; } }
@@ -327,5 +331,5 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: .4rem .6rem;
+    padding: 0.4rem 0.6rem;
     background-color: #fff; }

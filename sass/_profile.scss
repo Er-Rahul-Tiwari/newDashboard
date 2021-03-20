@@ -1,12 +1,12 @@
 .profiles {
     background-color: $color-fa;
     grid-column: full-start/ col-end 2;
-    
+
     display: grid;
     grid-row-gap: 2rem;
     padding: 4rem 2rem 4rem 3rem;
 
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-small) {
         grid-column: full-start / full-end;
         background-color: $color-white;
         justify-items: center;
@@ -32,10 +32,11 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-        box-shadow: 0 0 1rem rgba($color-black,.3);
+        box-shadow: 0 0 1rem rgba($color-black, 0.3);
     }
-    &__name {}
-    &__revenue{
+    &__name {
+    }
+    &__revenue {
         display: grid;
         justify-content: start;
         justify-items: start;
@@ -43,22 +44,22 @@
         padding: 3rem 2rem;
         background-color: $color-fa;
         @extend %border__radius-1;
-}
-    &__today{
+    }
+    &__today {
         font-size: $font-16;
         font-weight: $weight-700;
         color: $color-777;
     }
-    &__box{
+    &__box {
         display: grid;
         grid-row-gap: 2rem;
 
-        @media only screen and (max-width: $bp-small){
-            grid-template-columns: repeat(2,min-content);
+        @media only screen and (max-width: $bp-small) {
+            grid-template-columns: repeat(2, min-content);
             grid-column-gap: 1rem;
         }
     }
-    &__transection{
+    &__transection {
         background-color: $color-fa;
         padding: 3rem 2rem;
         display: grid;
@@ -66,7 +67,7 @@
         text-transform: capitalize;
         @extend %border__radius-1;
     }
-    &__withdrawal{
+    &__withdrawal {
         font-size: $font-12;
         font-weight: $weight-700;
         text-transform: capitalize;
