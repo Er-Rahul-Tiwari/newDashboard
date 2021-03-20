@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     grid-column: sidebar-start / sidebar-end;
 
     display: grid;
@@ -8,14 +8,57 @@
     position: sticky;
     top: 0;
 
-    &__top{
+    padding: 3rem 0;
+
+    &__active{
+        background-color: $color-blue-light;
+        box-shadow: 0 0 1.5rem rgba($color-black,.3);
+        svg{
+            fill: $color-white;
+        }
+    }
+    &__btn {
+        width: 3.6rem;
+        height: 3.6rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        border-radius: .7rem;
+        -webkit-border-radius: .7rem;
+        -moz-border-radius: .7rem;
+        -ms-border-radius: .7rem;
+        -o-border-radius: .7rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+}
+    &__top {
         display: grid;
         align-content: start;
         justify-items: center;
+        grid-row-gap: 2rem;
+
+        &__itmes {
+            display: grid;
+            align-items: center;
+            grid-row-gap: 2rem;
+            padding-bottom: 4rem;
+        }
+        &__logo {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
     }
-    &__bottom{
+    &__bottom {
         display: grid;
         justify-items: center;
         align-content: end;
+        grid-row-gap: 2rem;
     }
 }

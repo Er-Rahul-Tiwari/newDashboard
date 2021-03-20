@@ -75,7 +75,7 @@ body {
     background-color: rgba(7, 7, 161, 0.9);
     cursor: pointer; }
 
-.notification, .presentation, .global, .lock {
+.notification, .presentation, .global, .lock, .search, .hut {
   width: 2.4rem;
   height: 2.4rem; }
 
@@ -91,6 +91,12 @@ body {
 .lock {
   fill: #999; }
 
+.search {
+  fill: #999; }
+
+.hut {
+  fill: #999; }
+
 .navbar {
   grid-column: sidebar-start / sidebar-end;
   display: grid;
@@ -98,15 +104,49 @@ body {
   grid-row: 1 / -1;
   height: 100vh;
   position: sticky;
-  top: 0; }
+  top: 0;
+  padding: 3rem 0; }
+  .navbar__active {
+    background-color: rgba(28, 28, 245, 0.9);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3); }
+    .navbar__active svg {
+      fill: #fff; }
+  .navbar__btn {
+    width: 3.6rem;
+    height: 3.6rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem; }
+    .navbar__btn:hover {
+      cursor: pointer; }
   .navbar__top {
     display: grid;
     align-content: start;
-    justify-items: center; }
+    justify-items: center;
+    grid-row-gap: 2rem; }
+    .navbar__top__itmes {
+      display: grid;
+      align-items: center;
+      grid-row-gap: 2rem;
+      padding-bottom: 4rem; }
+    .navbar__top__logo {
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
   .navbar__bottom {
     display: grid;
     justify-items: center;
-    align-content: end; }
+    align-content: end;
+    grid-row-gap: 2rem; }
 
 .profiles {
   background-color: #fafafa;
