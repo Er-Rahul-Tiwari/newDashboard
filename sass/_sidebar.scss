@@ -42,4 +42,10 @@
         padding: 0.4rem 0.6rem;
         background-color: $color-white;
     }
+
+    &__baze{
+        border-left: 2px solid $color-blue-light;
+        padding: 2rem;
+        margin-bottom: 8rem;
+    }
 }

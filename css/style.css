@@ -32,9 +32,6 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem; }
 
-.sm__none {
-  display: none; }
-
 *,
 ::before,
 ::after {
@@ -87,10 +84,14 @@ body {
     cursor: pointer; }
 
 .link {
+  display: grid;
+  align-self: center;
+  justify-self: center;
   font-size: 1.4rem;
-  font-size: 700;
+  font-weight: 600;
   color: rgba(28, 28, 245, 0.9);
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: capitalize; }
 
 .notification, .presentation, .global, .lock, .search, .hut {
   width: 2.4rem;
@@ -243,6 +244,9 @@ body {
         width: 100%;
         justify-items: end; } }
 
+.sm__none {
+  display: none; }
+
 .profiles {
   background-color: #fafafa;
   grid-column: full-start/ col-end 2;
@@ -349,3 +353,7 @@ body {
     justify-items: center;
     padding: 0.4rem 0.6rem;
     background-color: #fff; }
+  .sidebar__baze {
+    border-left: 2px solid rgba(28, 28, 245, 0.9);
+    padding: 2rem;
+    margin-bottom: 8rem; }
