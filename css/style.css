@@ -61,11 +61,11 @@ body {
 
 .btn {
   padding: 1rem 2.4rem;
-  border-radius: .6rem;
-  -webkit-border-radius: .6rem;
-  -moz-border-radius: .6rem;
-  -ms-border-radius: .6rem;
-  -o-border-radius: .6rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
   font-size: 1.6rem;
   background-color: rgba(28, 28, 245, 0.9);
   color: #fff;
@@ -74,6 +74,22 @@ body {
   .btn:hover {
     background-color: rgba(7, 7, 161, 0.9);
     cursor: pointer; }
+
+.notification, .presentation, .global, .lock {
+  width: 2.4rem;
+  height: 2.4rem; }
+
+.notification {
+  fill: #999; }
+
+.presentation {
+  fill: #999; }
+
+.global {
+  fill: #999; }
+
+.lock {
+  fill: #999; }
 
 .navbar {
   grid-column: sidebar-start / sidebar-end;

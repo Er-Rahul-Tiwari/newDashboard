@@ -1,17 +1,40 @@
-.btn{
+// BUTTONS
+.btn {
     padding: 1rem 2.4rem;
-    border-radius: .6rem;
-    -webkit-border-radius: .6rem;
-    -moz-border-radius: .6rem;
-    -ms-border-radius: .6rem;
-    -o-border-radius: .6rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
     font-size: $font-16;
     background-color: $color-blue-light;
     color: $color-white;
     outline: none;
     border: none;
-    &:hover{
+    &:hover {
         background-color: $color-blue-dark;
         cursor: pointer;
     }
+}
+
+// SVG ICONS
+%icon {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.notification {
+    @extend %icon;
+    fill: $color-999;
+}
+.presentation{
+    @extend %icon;
+    fill: $color-999;
+}
+.global{
+    @extend %icon;
+    fill: $color-999;
+}
+.lock{
+    @extend %icon;
+    fill: $color-999;
 }
