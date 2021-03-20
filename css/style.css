@@ -105,7 +105,7 @@ body {
   height: 100vh;
   position: sticky;
   top: 0;
-  padding: 3rem 0; }
+  padding: 2rem 0; }
   .navbar__active {
     background-color: rgba(28, 28, 245, 0.9);
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3); }
