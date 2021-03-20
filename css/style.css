@@ -111,6 +111,8 @@ body {
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3); }
     .navbar__active svg {
       fill: #fff; }
+    .navbar__active:hover {
+      background-color: rgba(7, 7, 161, 0.9); }
   .navbar__btn {
     width: 3.6rem;
     height: 3.6rem;

@@ -16,6 +16,9 @@
         svg{
             fill: $color-white;
         }
+        &:hover{
+            background-color: $color-blue-dark;
+        }
     }
     &__btn {
         width: 3.6rem;
