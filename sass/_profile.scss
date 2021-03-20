@@ -7,6 +7,7 @@
     padding: 4rem 2rem 4rem 3rem;
 
     @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
         background-color: $color-white;
         justify-items: center;
     }

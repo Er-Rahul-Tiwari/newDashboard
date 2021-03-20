@@ -1,10 +1,14 @@
 .sidebars{
     // background-color: $color-fa;
     grid-column: col-end 6/ full-end;
+
+    @media only screen and (max-width: $bp-small){
+        grid-column: full-start / full-end;
+    }
 }
 .sidebar{
     display: grid;
-    grid-row-gap: 2rem;
+    grid-row-gap: 3rem;
     align-items: center;
     justify-items: start;
     margin: 4rem 0;
@@ -13,11 +17,22 @@
     @extend %border__radius-1;
     background-color: $color-fa;
 
+    &__employee{
+        display: grid;
+        grid-row-gap: 1rem;
+    }
     &__col-2{
         display: grid;
-        grid-template-columns: fr 1fr;
+        grid-template-columns: 12fr 2fr;
         grid-column-gap: 1rem;
         align-items: center;
         grid-auto-flow: column;
+    }
+    &__background{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: .4rem .6rem;
+        background-color: $color-white;
     }
 }

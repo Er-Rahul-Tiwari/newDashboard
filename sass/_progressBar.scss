@@ -4,7 +4,7 @@
     left: 0.1rem;
     background-color: $color-blue-lighter;
     height: 0.4rem;
-    top: 0.5rem;
+    top: 1rem;
 }
 .bar {
     display: flex;
@@ -27,20 +27,19 @@
 .bar-view:not(:last-child):before,
 .bar-view:not(:last-child):after {
     content: "";
-    width: calc(100% - 2.4rem);
+    width: 100%;
     position: absolute;
-    right: calc(50% + 1.2rem);
 }
 .bar-view:not(:last-child):before {
     height: 0.4rem;
-    top: calc(50% - 0.3rem);
+    top: 1rem;
     background: $color-eee;
 }
 
 .bar-button {
     display: block;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     background: $color-white;
     position: relative;
