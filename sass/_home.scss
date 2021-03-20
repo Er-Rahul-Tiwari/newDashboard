@@ -1,7 +1,11 @@
-.home{
+.homes{
     grid-column: col-start 3/ col-end 5;
 
     @media only screen and (max-width: $bp-small){
         grid-column: full-start / full-end;
     }
+}
+
+.home{
+    
 }
