@@ -32,6 +32,9 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem; }
 
+.sm__none {
+  display: none; }
+
 *,
 ::before,
 ::after {
@@ -64,6 +67,10 @@ body {
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
 
 .btn {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
   padding: 1rem 2.4rem;
   border-radius: 0.6rem;
   -webkit-border-radius: 0.6rem;
@@ -78,6 +85,12 @@ body {
   .btn:hover {
     background-color: rgba(7, 7, 161, 0.9);
     cursor: pointer; }
+
+.link {
+  font-size: 1.4rem;
+  font-size: 700;
+  color: rgba(28, 28, 245, 0.9);
+  text-decoration: none; }
 
 .notification, .presentation, .global, .lock, .search, .hut {
   width: 2.4rem;
@@ -230,9 +243,6 @@ body {
         width: 100%;
         justify-items: end; } }
 
-.sm__none {
-  display: none; }
-
 .profiles {
   background-color: #fafafa;
   grid-column: full-start/ col-end 2;
@@ -324,6 +334,12 @@ body {
   .sidebar__col-2 {
     display: grid;
     grid-template-columns: 12fr 2fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    grid-auto-flow: column; }
+  .sidebar__grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 1rem;
     align-items: center;
     grid-auto-flow: column; }
