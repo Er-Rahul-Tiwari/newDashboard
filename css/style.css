@@ -287,7 +287,7 @@ body {
   grid-gap: 2rem;
   padding: 0 2rem;
   align-items: center;
-  justify-items: start; }
+  justify-content: center; }
   @media only screen and (max-width: 37.5em) {
     .profile__story {
       width: 100%; } }
@@ -409,7 +409,7 @@ body {
   grid-template-columns: min-content 1fr;
   align-items: center; }
 
-.home__circleGraph {
+.home__circle-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
 
@@ -423,7 +423,7 @@ body {
   display: grid;
   grid-row-gap: 3rem;
   align-items: center;
-  justify-items: start;
+  justify-content: center;
   margin: 4rem 0;
   padding: 3rem;
   background-color: red;
