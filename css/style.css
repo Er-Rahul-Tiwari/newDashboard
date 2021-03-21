@@ -93,7 +93,7 @@ body {
       grid-template-rows: repeat(6, min-content);
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
 
-.bar > span {
+.barline > span {
   position: relative;
   display: flex;
   left: 0.1rem;
@@ -101,7 +101,7 @@ body {
   height: 0.4rem;
   top: 1rem; }
 
-.bar {
+.barline {
   display: flex;
   flex-direction: row-reverse;
   position: relative;
