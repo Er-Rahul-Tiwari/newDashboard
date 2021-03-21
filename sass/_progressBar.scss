@@ -1,3 +1,4 @@
+// PROGRESS LINE BAR
 .bar > span {
     position: relative;
     display: flex;
@@ -46,4 +47,84 @@
     cursor: pointer;
     z-index: 5;
     box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+// CIRCLE PROGRESS BAR
+.set-size {
+    font-size: 5rem;
+}
+
+.charts-container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.pie-wrapper {
+    height: 1em;
+    width: 1em;
+    float: left;
+    margin: 1rem;
+    position: relative;
+}
+.pie-wrapper:nth-child(3n + 1) {
+    clear: both;
+}
+.pie-wrapper .pie {
+    height: 100%;
+    width: 100%;
+    clip: rect(0, 1em, 1em, 0.5em);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .pie .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 0.6rem solid #1abc9c;
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .label {
+    // background: $color-blue-light;
+    border-radius: 50%;
+    // bottom: 0.03rem;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: 2rem;
+    left: 0.4em;
+    line-height: 2.8em;
+    position: absolute;
+    right: 0.4em;
+    text-align: center;
+    top: -.4rem;
+}
+.pie-wrapper .label .smaller {
+    color: bolder;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    vertical-align: super;
+}
+.pie-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 0.05em solid rgba(26, 188, 156, 0.3);
+    border-radius: 50%;
+}
+.pie-wrapper.style-2 .label {
+    font-weight: bolder;
+    color: $color-black;
+}
+// .pie-wrapper.progress-45 .pie .half-circle {
+//     border-color: #1abc9c;
+// }
+.pie-wrapper.progress-45 .pie .left-side {
+    transform: rotate(162deg);
+}
+.pie-wrapper.progress-45 .pie .right-side {
+    display: none;
 }

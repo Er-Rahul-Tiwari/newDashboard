@@ -50,6 +50,19 @@ $color-fa: #fafafa;
     margin-top:4rem !important;
 }
 
+.black{
+    color: $color-222 !important;
+}
+.blue-dark{
+    background-color: $color-blue-dark;
+}
+.blue-light{
+    background-color: $color-blue-light;
+}
+.blue-lighter{
+    background-color: $color-blue-lighter;
+}
+
 // FONT FAMILY
 $font-primary: 'Nunito', sans-serif;
 $font-secondary: 'Josefin Sans', sans-serif;
@@ -105,7 +118,4 @@ $bp-small: 37.5em;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
-}
-.black{
-    color: $color-222;
 }

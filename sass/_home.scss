@@ -7,7 +7,7 @@
 }
 
 .home {
-    &__subHeading{
+    &__subHeading {
         font-weight: $weight-700;
         font-size: $font-14;
         color: $color-blue-light;
@@ -22,16 +22,16 @@
         padding: 5rem 0;
         grid-row-gap: 2rem;
 
-        @media only screen and (max-width: $bp-small){
+        @media only screen and (max-width: $bp-small) {
             grid-template-columns: 1fr;
         }
     }
-    &__box{
+    &__box {
         display: grid;
         grid-auto-flow: column;
         grid-column-gap: 3rem;
 
-    @media only screen and (max-width: $bp-small){
+        @media only screen and (max-width: $bp-small) {
             // display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
@@ -40,44 +40,57 @@
         border-bottom: 1px solid $color-blue-lighter;
         margin-top: 1rem;
     }
-    &__graph{
+    &__graph {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1rem;
     }
 
-    &__items-2{
+    &__items-2 {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1rem;
     }
-    &__items-3{
+    &__items-3 {
         display: grid;
-        grid-template-columns: min-content repeat(2,1fr);
-        grid-column-gap: .4rem;
+        grid-template-columns: min-content repeat(2, 1fr);
+        grid-column-gap: 0.4rem;
         align-items: center;
     }
-    &__icon{
+    &__icon {
         width: 1rem;
-        height: .6rem;
+        height: 0.6rem;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-        background-color: $color-blue-light;
-}
-&__grap-2{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-&__select{
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    align-items: center;
-}
-&__circle-box{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
+    }
+    &__graph-2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 6rem;
+    }
+    &__graph-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    &__select {
+        display: grid;
+        grid-template-columns: 1fr;
+        // grid-row-gap: .4rem;
+        align-items: center;
+
+    }
+    &__option{
+        border: none;
+        // outline: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__circle-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
