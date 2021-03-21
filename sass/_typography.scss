@@ -31,12 +31,24 @@ $color-eee: #eee;
 $color-fa: #fafafa;
 
 // UTILITIES
-$mb-small: 1rem !important;
-$mt-small: 1rem !important;
-$mb-medium: 2rem !important;
-$mt-medium: 2rem !important;
-$mb-large: 4rem !important;
-$mt-large: 4rem !important;
+.mb-small{
+    margin-bottom:1rem !important;
+}
+.mt-small{
+    margin-top:1rem !important;
+}
+.mb-medium{
+    margin-bottom:2rem !important;
+}
+.mt-medium{
+    margin-top:2rem !important;
+}
+.mb-large{
+    margin-bottom:4rem !important;
+}
+.mt-large{
+    margin-top:4rem !important;
+}
 
 // FONT FAMILY
 $font-primary: 'Nunito', sans-serif;
@@ -52,7 +64,8 @@ $bp-small: 37.5em;
 %heading {
     font-family: $font-secondary;
     font-weight: 400;
-    line-height: 1
+    line-height: 1;
+    text-transform: capitalize;
 }
 
 .heading-1{
@@ -92,4 +105,7 @@ $bp-small: 37.5em;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+}
+.black{
+    color: $color-222;
 }
