@@ -51,7 +51,7 @@
 
 // CIRCLE PROGRESS BAR
 .set-size {
-    font-size: 5rem;
+    font-size: 7rem;
 }
 
 .charts-container:after {
@@ -89,9 +89,7 @@
     top: 0;
 }
 .pie-wrapper .label {
-    // background: $color-blue-light;
     border-radius: 50%;
-    // bottom: 0.03rem;
     color: #ecf0f1;
     cursor: default;
     display: block;
@@ -101,7 +99,7 @@
     position: absolute;
     right: 0.4em;
     text-align: center;
-    top: -.4rem;
+    top: .6rem;
 }
 .pie-wrapper .label .smaller {
     color: bolder;
@@ -119,9 +117,6 @@
     font-weight: bolder;
     color: $color-black;
 }
-// .pie-wrapper.progress-45 .pie .half-circle {
-//     border-color: #1abc9c;
-// }
 .pie-wrapper.progress-45 .pie .left-side {
     transform: rotate(162deg);
 }
