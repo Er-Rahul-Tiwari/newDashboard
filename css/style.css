@@ -400,6 +400,19 @@ body {
   -o-border-radius: 50%;
   background-color: rgba(28, 28, 245, 0.9); }
 
+.home__grap-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.home__select {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center; }
+
+.home__circleGraph {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
 .sidebars {
   grid-column: col-end 6 / full-end; }
   @media only screen and (max-width: 37.5em) {

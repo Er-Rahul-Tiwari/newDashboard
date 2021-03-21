@@ -67,4 +67,17 @@
         -o-border-radius: 50%;
         background-color: $color-blue-light;
 }
+&__grap-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+&__select{
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+}
+&__circleGraph{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 }
