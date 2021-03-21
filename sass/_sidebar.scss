@@ -1,7 +1,5 @@
 .sidebars {
-    // background-color: $color-fa;
     grid-column: col-end 6 / full-end;
-
     @media only screen and (max-width: $bp-small) {
         grid-column: full-start / full-end;
     }
@@ -16,7 +14,6 @@
     background-color: red;
     @extend %border__radius-1;
     background-color: $color-fa;
-
     &__employee {
         display: grid;
         grid-row-gap: 1rem;
@@ -42,7 +39,6 @@
         padding: 0.4rem 0.6rem;
         background-color: $color-white;
     }
-
     &__baze{
         border-left: 2px solid $color-blue-light;
         padding: 2rem;
