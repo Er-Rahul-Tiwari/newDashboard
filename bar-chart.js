@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // Specify data, options, and element in which to create the chart
     let data = {
-      dataValues: [[1, 1, ], [2, 2, 2], [3, 3, 3], [4, 4, 4],[5,5,5],[6,6,6],[7,7,7]], // for a normal bar chart use multiple arrays with 1 value in each array
+      dataValues: [[9, 9,9 ], [2, 4, 6], [8, 2, 7], [3, 6, 3], [2, 4, 6], [8, 2, 2], [5, 5, 5]], // for a normal bar chart use multiple arrays with 1 value in each array
       legend: ["Employer: K73,500", "Employee: K52,500", "Total: K244,323"], // for stacked bar charts
       legendColors: ["#b2d7e9", "#6969f7", "#06066d"], // bar colors
       barLabels: ["20", "25", "30", "35","40","60","65"], // x-axis labels
@@ -12,7 +12,7 @@ $(document).ready(function() {
       chartWidth: "100%", // use valid css sizing
       chartHeight: "100%", // use valid css sizing
       chartTitle: "", // enter chart title
-      chartTitleColor: "aqua", // enter any valid css color
+      chartTitleColor: "#333", // enter any valid css color
       chartTitleFontSize: "1rem", // enter a valid css font size
       yAxisTitle: "", // enter title for y-axis
       xAxisTitle: "", // enter title for x-axis

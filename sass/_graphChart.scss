@@ -23,9 +23,14 @@
   .legendKey {
     display: inline-block;
     width: 1rem;
-    height: 1rem;
+    height: .6rem;
+    border-radius: .4rem;
     margin: 0 10px;
-  }
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+}
   
   input:focus {
     outline: none;
@@ -86,11 +91,11 @@
   }
   
   .xAxis {
-    width: 75%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px 0;
+    padding: .4rem 0;
   }
   
   .xAxisLabel {
@@ -102,7 +107,7 @@
   .xAxisTitle {
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 1%;
   }
   
