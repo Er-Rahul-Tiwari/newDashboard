@@ -12,12 +12,12 @@ $(document).ready(function() {
       chartWidth: "100%", // use valid css sizing
       chartHeight: "100%", // use valid css sizing
       chartTitle: "", // enter chart title
-      chartTitleColor: "#333", // enter any valid css color
+      chartTitleColor: "#777", // enter any valid css color
       chartTitleFontSize: "1rem", // enter a valid css font size
       yAxisTitle: "", // enter title for y-axis
       xAxisTitle: "", // enter title for x-axis
       barValuePosition: "center", // "flex-start" (top), "center", or "flex-end" (bottom)
-      barSpacing: "1%" // "1%" (small), "3%" (medium), "5%" (large)
+      barSpacing: "4%" // "1%" (small), "3%" (medium), "5%" (large)
     };
   
     let element = "#testDiv"; // Use a jQuery selector to select the element to put the chart into
