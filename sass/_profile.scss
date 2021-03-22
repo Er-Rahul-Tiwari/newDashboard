@@ -4,12 +4,13 @@
 
     display: grid;
     grid-row-gap: 2rem;
-    padding: 4rem 2rem 4rem 3rem;
+    padding: 3rem 2rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
         background-color: $color-white;
         justify-items: center;
+        padding: 2rem 0;
     }
 }
 
@@ -18,15 +19,15 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-gap: 2rem;
-        padding: 0 2rem;
 
         align-items: center;
         justify-content: center;
 
         @media only screen and (max-width: $bp-small) {
             width: 100%;
+            padding: 0;
         }
-        }
+    }
     &__img {
         height: 7rem;
         width: 7rem;
@@ -70,6 +71,10 @@
         text-transform: capitalize;
         @extend %border__radius-1;
         width: 100%;
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 2rem 1rem;
+        }
     }
     &__withdrawal {
         font-size: $font-12;

@@ -1,8 +1,9 @@
 .homes {
     grid-column: col-start 3 / col-end 6;
     padding: 4rem;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
+        padding: 1rem 0;
     }
 }
 
@@ -68,37 +69,43 @@
     }
     &__graph-2 {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 3rem;
         align-items: center;
         // justify-items: center;
 
-        @media only screen and (max-width: $bp-small){
+        @media only screen and (max-width: $bp-small) {
             grid-template-columns: 1fr;
+            padding-bottom: 7rem;
+        }
+        @media only screen and (max-width: $bp-smallest) {
         }
     }
-    &__graph-3{
+    &__graph-3 {
         display: grid;
-        grid-template-columns: min-content 1fr ;
+        grid-template-columns: min-content 1fr;
         grid-column-gap: 1rem;
     }
     &__select {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
-
     }
-    &__option{
+    &__option {
         border: none;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
     &__circle-box {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-    &__circle{
+    &__circle {
         display: grid;
         align-items: center;
         justify-items: center;

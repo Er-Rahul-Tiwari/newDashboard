@@ -96,14 +96,14 @@
     }
 }
 
-.sm__none{
-    @media only screen and (max-width: $bp-small){
+.sm__none {
+    @media only screen and (max-width: $bp-small) {
         display: none;
     }
 }
-.lg__none{
+.lg__none {
     display: none;
-    @media only screen and (max-width: $bp-small){
+    @media only screen and (max-width: $bp-small) {
         display: grid;
     }
 }

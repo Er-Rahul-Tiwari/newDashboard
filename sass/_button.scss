@@ -22,7 +22,7 @@
 }
 
 // Link
-.link{
+.link {
     display: grid;
     align-self: center;
     justify-self: center;
@@ -42,23 +42,23 @@
     @extend %icon;
     fill: $color-999;
 }
-.presentation{
+.presentation {
     @extend %icon;
     fill: $color-999;
 }
-.global{
+.global {
     @extend %icon;
     fill: $color-999;
 }
-.lock{
+.lock {
     @extend %icon;
     fill: $color-999;
 }
-.search{
+.search {
     @extend %icon;
     fill: $color-999;
 }
-.hut{
+.hut {
     @extend %icon;
     fill: $color-999;
 }

@@ -1,6 +1,6 @@
 .sidebars {
     grid-column: col-end 6 / full-end;
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-large) {
         grid-column: full-start / full-end;
     }
 }
@@ -8,12 +8,15 @@
     display: grid;
     grid-row-gap: 3rem;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin: 4rem 0;
     padding: 3rem;
-    background-color: red;
+    // background-color: red;
     @extend %border__radius-1;
     background-color: $color-fa;
+    @media only screen and (max-width: $bp-small) {
+        padding: 2rem 1rem;
+    }
     &__employee {
         display: grid;
         grid-row-gap: 1rem;
@@ -25,7 +28,7 @@
         align-items: center;
         grid-auto-flow: column;
     }
-    &__grid-2{
+    &__grid-2 {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-column-gap: 1rem;
@@ -39,7 +42,7 @@
         padding: 0.4rem 0.6rem;
         background-color: $color-white;
     }
-    &__baze{
+    &__baze {
         border-left: 2px solid $color-blue-light;
         padding: 2rem;
         margin-bottom: 8rem;
