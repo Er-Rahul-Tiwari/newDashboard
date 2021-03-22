@@ -7,9 +7,9 @@
 }
 html {
     font-size: 62.5%; // 10/16px = 62.5%, 10px= 1rem
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 50%;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //     font-size: 50%;
+    // }
 }
 body {
     box-sizing: border-box;
