@@ -18,7 +18,11 @@
   height: 15%;
   text-align: left;
   margin-bottom: 2rem;
+  @media only screen and (max-width:$bp-smallest){
+    height: 20%;
+  }
 }
+
 
 .legendKey {
   display: inline-block;

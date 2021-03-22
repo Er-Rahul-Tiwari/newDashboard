@@ -284,6 +284,9 @@ body {
   height: 15%;
   text-align: left;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 25em) {
+    .chartLegend {
+      height: 20%; } }
 
 .legendKey {
   display: inline-block;
@@ -567,31 +570,6 @@ input:focus {
 .home__underline {
   border-bottom: 1px solid rgba(28, 28, 245, 0.4);
   margin-top: 1rem; }
-
-.home__graph {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem; }
-
-.home__items-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem; }
-
-.home__items-3 {
-  display: grid;
-  grid-template-columns: min-content repeat(2, 1fr);
-  grid-column-gap: 0.4rem;
-  align-items: center; }
-
-.home__icon {
-  width: 1rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%; }
 
 .home__graph-2 {
   display: grid;

@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Specify data, options, and element in which to create the chart
     let data = {
       dataValues: [[9, 9,9 ], [8, 8, 8], [7, 7, 7], [6, 6, 6], [5, 5, 5], [4, 4, 4], [3, 3, 3]], // for a normal bar chart use multiple arrays with 1 value in each array
-      legend: ["Employer: K73,500", "Employee: K52,500", "Total: K244,323"], // for stacked bar charts
+      legend: ["Employer: K7,500", "Employee: K2,500", "Total: K4,323"], // for stacked bar charts
       legendColors: ["#b2d7e9", "#6969f7", "#06066d"], // bar colors
       barLabels: ["20", "25", "30", "35","40","60","65"], // x-axis labels
       labelColors: ["gray","gray","gray","gray","gray","gray","gray"] // x-axis label colors 
