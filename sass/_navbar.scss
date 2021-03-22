@@ -2,12 +2,12 @@
     grid-column: sidebar-start / sidebar-end;
 
     display: grid;
-    grid-template-rows: 2fr 1fr;
     grid-row: 1 / -1;
+    grid-template-rows: 2fr 1fr;
     height: 100vh;
     position: sticky;
     top: 0;
-    padding: 2rem 0;
+    padding: 1rem 0;
     z-index: 9999;
 
     @media only screen and (max-width: $bp-small) {
@@ -63,12 +63,12 @@
             background-color: $color-white;
         }
 
-        &__itmes {
-            display: grid;
-            align-items: center;
-            grid-row-gap: 2rem;
-            padding-bottom: 4rem;
-        }
+        // &__itmes {
+        //     display: grid;
+        //     align-items: center;
+        //     grid-row-gap: 2rem;
+        //     padding-bottom: 4rem;
+        // }
         &__logo {
             width: 2.4rem;
             height: 2.4rem;
@@ -99,5 +99,11 @@
 .sm__none{
     @media only screen and (max-width: $bp-small){
         display: none;
+    }
+}
+.lg__none{
+    display: none;
+    @media only screen and (max-width: $bp-small){
+        display: grid;
     }
 }

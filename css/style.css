@@ -86,7 +86,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(6, min-content);
+  grid-template-rows: repeat(4, min-content);
   grid-template-columns: minmax(0.1rem, 1fr) [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end] minmax(0.1rem, 1fr); }
   @media only screen and (max-width: 37.5em) {
     .container {
@@ -279,7 +279,7 @@ body {
 
 .chartLegend {
   width: 100%;
-  height: 10%;
+  height: 15%;
   text-align: left;
   margin-bottom: 2rem; }
 
@@ -330,7 +330,7 @@ input:focus {
   display: none !important; }
 
 #testDiv {
-  height: 60% !important; }
+  height: 40% !important; }
 
 .bar {
   align-self: flex-end;
@@ -373,12 +373,12 @@ input:focus {
 .navbar {
   grid-column: sidebar-start / sidebar-end;
   display: grid;
-  grid-template-rows: 2fr 1fr;
   grid-row: 1 / -1;
+  grid-template-rows: 2fr 1fr;
   height: 100vh;
   position: sticky;
   top: 0;
-  padding: 2rem 0;
+  padding: 1rem 0;
   z-index: 9999; }
   @media only screen and (max-width: 37.5em) {
     .navbar {
@@ -424,11 +424,6 @@ input:focus {
         width: 100%;
         padding: 0.5rem 0;
         background-color: #fff; } }
-    .navbar__top__itmes {
-      display: grid;
-      align-items: center;
-      grid-row-gap: 2rem;
-      padding-bottom: 4rem; }
     .navbar__top__logo {
       width: 2.4rem;
       height: 2.4rem;
@@ -454,6 +449,12 @@ input:focus {
 @media only screen and (max-width: 37.5em) {
   .sm__none {
     display: none; } }
+
+.lg__none {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .lg__none {
+      display: grid; } }
 
 .profiles {
   background-color: #fafafa;
@@ -589,8 +590,10 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 3rem;
-  align-items: center;
-  justify-items: center; }
+  align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .home__graph-2 {
+      grid-template-columns: 1fr; } }
 
 .home__graph-3 {
   display: grid;
